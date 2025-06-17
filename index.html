@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NEXUS - Streaming de Filmes</title>
+<link rel="stylesheet" href="style.css" />
+
+
+<!-- Menu de Hamburger -->
+<div class="hamburger" id="menu-toggle" aria-label="Abrir menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<!-- Ícones Font Awesome CDN -->
+<script src="main.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+  <div class="logo" tabindex="0" aria-label="Logo NEXUS">NEXUS</div>
+  <nav aria-label="Navegação principal">
+    <ul role="tablist">
+      <li><a href="#" role="tab" aria-selected="true" data-tab="home" class="active" tabindex="0">Início</a></li>
+      <li><a href="#" role="tab" aria-selected="false" data-tab="categories" tabindex="-1">Categorias</a></li>
+      <li><a href="#" role="tab" aria-selected="false" data-tab="subscription" tabindex="-1">Inscrição</a></li>
+      <li><a href="#" role="tab" aria-selected="false" data-tab="my-list" tabindex="-1">Minha Lista</a></li>
+    </ul>
+  </nav>
+  <div class="search-container">
+    <input type="text" id="search-input" aria-label="Buscar filmes" placeholder="Buscar filmes..." />
+    <button id="search-button" aria-label="Pesquisar"><svg aria-hidden="true" height="16" width="16" fill="currentColor" viewBox="0 0 24 24"><path d="M10 4a6 6 0 014.472 10.06l5.484 5.484-1.414 1.414-5.484-5.484A6 6 0 1110 4zm0 2a4 4 0 100 8 4 4 0 000-8z"/></svg></button>
+  </div>
+  <div class="user-menu" tabindex="0" aria-haspopup="true" aria-expanded="false">
+    <button class="user-icon" aria-label="Abrir menu do usuário"><svg aria-hidden="true" focusable="false" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12a5 5 0 100-10 5 5 0 000 10zm0 2c-3.33 0-10 1.67-10 5v3h20v-3c0-3.33-6.67-5-10-5z"/></svg></button>
+    <div class="dropdown-menu" role="menu" aria-label="Menu do usuário">
+      <a href="#" role="menuitem" tabindex="-1">Meu Perfil</a>
+      <a href="#" role="menuitem" tabindex="-1">Configurações</a>
+      <a href="#" role="menuitem" tabindex="-1">Sair</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Aba Início -->
+  <section id="home" class="tab-content active" role="tabpanel" tabindex="0" aria-labelledby="tab-home">
+    <div class="hero" role="banner" aria-label="Apresentação do NEXUS">
+      <h2>Bem-vindo ao NEXUS</h2>
+      <p>Assista aos melhores filmes e séries em um só lugar</p>
+      <button class="cta-button" id="subscribeCtaButton">Assinar Agora</button>
+    </div>
+    <h2 class="section-title">Destaques</h2>
+    <div class="movie-slider" aria-label="Filmes em destaque">
+      <!-- Filtrados pelo JS -->
+    </div>
+    <h2 class="section-title">Lançamentos</h2>
+    <div class="movie-slider" aria-label="Lançamentos recentes">
+      <!-- Filtrados pelo JS -->
+    </div>
+  </section>
+
+
+<div id="modal-comments">
+  <!-- Comentários serão inseridos aqui pelo JS -->
+</div>
+
+  <!-- Aba Categorias -->
+  
+    <section id="categories" class="tab-content" role="tabpanel" tabindex="0" aria-labelledby="tab-categories">
+    <div class="categories-container">
+      <h2>Categorias</h2>
+      <div class="category-grid">
+        <div class="category-card">
+          <img src="../nexus2.5/img/durodematar.png" alt="Ação">
+          <h3>Ação</h3>
+        </div>
+        <div class="category-card">
+          <img src="../nexus2.5/img/gentegrande.png" alt="Comédia">
+          <h3>Comédia</h3>
+        </div>
+        <div class="category-card">
+          <img src="../nexus2.5/img/comoera.png" alt="Drama">
+          <h3>Drama</h3>
+        </div>
+        <div class="category-card">
+          <img src="../nexus2.5/img/anakin.png" alt="Ficção Científica">
+          <h3>Ficção Científica</h3>
+        </div>
+        <div class="category-card">
+          <img src="../nexus2.5/img/banguela.png" alt="Animação">
+          <h3>Animação</h3>
+        </div>
+        <!-- Adicione mais categorias aqui se quiser -->
+      </div>
+      <div id="category-results" aria-live="polite" aria-atomic="true">
+        <!-- Resultados da categoria -->
+      </div>
+    </div>
+  </section>
+
+ 
+
+
+
+  <!-- Aba Inscrição -->
+  <section id="subscription" class="tab-content" role="tabpanel" tabindex="0" aria-labelledby="tab-subscription">
+    <div class="subscription-container">
+      <h2>Escolha seu plano</h2>
+      <div class="plans-container" role="list">
+        <!-- Planos gerados pelo JS -->
+      </div>
+      <div class="payment-section">
+        <h3>Informações de Pagamento</h3>
+        <form id="payment-form" aria-label="Formulário de pagamento">
+          <label for="name">Nome Completo</label>
+          <input type="text" id="name" name="name" required placeholder="Digite seu nome completo" autocomplete="name" />
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required placeholder="Digite seu e-mail" autocomplete="email" />
+          <div class="form-row">
+            <div>
+              <label for="card-number">Número do Cartão</label>
+              <input type="text" id="card-number" name="cardNumber" required placeholder="0000 0000 0000 0000" inputmode="numeric" maxlength="19" />
+            </div>
+            <div>
+              <label for="card-expiry">Validade (MM/AA)</label>
+              <input type="text" id="card-expiry" name="cardExpiry" required placeholder="MM/AA" maxlength="5" />
+            </div>
+            <div>
+              <label for="card-cvv">CVV</label>
+              <input type="text" id="card-cvv" name="cardCVV" required placeholder="123" maxlength="3" inputmode="numeric" />
+            </div>
+          </div>
+          <label for="card-name">Nome no Cartão</label>
+          <input type="text" id="card-name" name="cardName" required placeholder="Nome como aparece no cartão" autocomplete="cc-name" />
+          <button type="submit" class="payment-button">Finalizar Assinatura</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Aba Minha Lista -->
+  <section id="my-list" class="tab-content" role="tabpanel" tabindex="0" aria-labelledby="tab-my-list">
+    <div class="my-list-container">
+      <h2>Minha Lista</h2>
+            <div id="my-list">
+        <div id="empty-list-message">Sua lista está vazia.</div>
+        <div id="my-list-movies"></div>
+      </div>
+        <button class="browse-button" id="browseCatalogBtn">Explorar Catálogo</button>  
+      </div>
+      <div class="movie-slider" id="my-list-movies" aria-label="Sua lista de filmes" style="display:none;">
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal do Filme -->
+  <div id="movie-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-description">
+    <div class="modal-content">
+      <button class="close-modal" aria-label="Fechar modal" title="Fechar">&times;</button>
+      <div class="modal-header">
+        <div class="modal-poster">
+          <img src="" alt="" id="modal-poster-img" />
+        </div>
+        <div class="modal-info">
+          <h2 id="modal-title">Título do Filme</h2>
+          <div class="modal-meta" aria-label="Informações do filme">
+            <span id="modal-year"></span>
+            <span id="modal-duration"></span>
+            <span id="modal-genre"></span>
+          </div>
+          <p class="modal-description" id="modal-description"></p>
+          <div class="modal-actions">
+             <button id="watch-button" aria-label="Assistir filme">Assistir</button>
+            <button id="trailer-button" aria-label="Assistir trailer">Trailer</button>
+            <button id="add-to-list-button" aria-label="Adicionar à Minha Lista">Minha Lista</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-rating-section">
+          <div id="rating-modal" class="modal">
+              <div class="modal-content">
+                 
+              </div>
+          </div>
+        
+        <div class="user-rating" role="radiogroup" aria-labelledby="rating-label">
+          <div class="rating-stars" id="rating-stars">
+           
+          </div>
+          
+        </div>
+      </div>
+      <div class="modal-comments-section">
+        <h3>Comentários</h3>
+        <div class="comment-form">
+          <textarea aria-label="Comente sobre o filme" id="comment-textarea" placeholder="Deixe seu comentário sobre o filme..."></textarea>
+          <button class="submit-comment" id="submit-comment-btn">Comentar</button>
+        </div>
+        <div class="comments-list" id="comments-list" aria-live="polite" aria-relevant="additions"></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+  
+  
+   
+  </div>
+  
+</div>
+<script src="main.js"></script>
+</body>
+</html>
+ 
