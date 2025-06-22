@@ -7,7 +7,7 @@ const filmes = [
     duracao: 90,
     avaliacao: 8.5,
     generos: ['Ação', 'Aventura', 'Fantasia', 'Animação'],
-    poster: '../img/valente.png',
+    poster: '../nexus2.5/img/valente.png',
     descricao: 'A princesa Merida deve seguir os costumes do seu reino e tomar-se rainha ao lado do cavalheiro que conseguir a sua mão durante um torneio de arco e flecha. Porém, a jovem está determinada a trilhar seu próprio caminho e desafia a tradição ancestral.',
     trailer: 'https://www.youtube.com/watch?v=TEHWDA_6e3M',
     assistir: 'https://drive.google.com/file/d/1m-tdZhebyZGVdC-naSKkM8QhnnR19eF8/view?usp=drive_link',
@@ -23,7 +23,7 @@ const filmes = [
     duracao: 102,
     avaliacao: 7.9,
     generos: ['Comédia', 'Aventura', 'Animação'],
-    poster: '../img/Onward.png',
+    poster: '../nexus2.5/img/Onward.png',
     descricao: 'Em um mundo transformado, no qual as criaturas não dependiam mais da magia para viver, dois irmãos elfos recebem um cajado de bruxo de seu falecido pai...',
     trailer: 'https://youtu.be/gn5QmllRCn4?si=peEJNVggGgye4Gag',
     assistir: 'https://drive.google.com/file/d/1EWxu4EyGrvE3aUPu6NwJkWi0E-yce0GY/view?usp=drive_link',
@@ -38,7 +38,7 @@ const filmes = [
     duracao: 105,
     avaliacao: 9.1,
     generos: ['Drama', 'Ficção Científica', 'Ação', 'Aventura'],
-    poster: '../img/mamacos.png',
+    poster: '../nexus2.5/img/mamacos.png',
     descricao: 'Muitas sociedades de macacos cresceram desde quando César levou seu povo a um oásis...',
     trailer: 'https://www.youtube.com/watch?v=Kdr5oedn7q8',
     assistir: 'https://drive.google.com/file/d/1rgyXCD3gTjB6wJF3S1_qBmxJdIbX0O4N/view?usp=drive_link',
@@ -54,7 +54,7 @@ const filmes = [
     duracao: 110,
     avaliacao: 8.2,
     generos: ['Drama', 'Suspense'],
-    poster: '../img/a-baleia.png',
+    poster: '../nexus2.5/img/a-baleia.png',
     descricao: 'Homem obeso e solitário busca se reconectar com filha adolescente em uma última chance de redenção.',
     trailer: 'https://www.youtube.com/watch?v=vqi1OuxQtJ8',
     assistir: 'https://drive.google.com/file/d/1L6WiqluCIaF1z8wNNST77yaovrcMQwlB/view?usp=drive_link',
@@ -388,3 +388,175 @@ document.getElementById('menu-toggle').onclick = function() {
   const navList = document.querySelector('nav ul');
   navList.classList.toggle('active');
 };
+
+// ClickSpark estilo faísca com canvas (JS puro)
+(function() {
+  // Configurações
+  const sparkColor = "#e50914";
+  const sparkSize = 18; // comprimento da faísca
+  const sparkRadius = 24; // distância do centro
+  const sparkCount = 10;
+  const duration = 400; // ms
+
+  // Cria o canvas global
+  let canvas = document.getElementById('click-spark-canvas');
+  if (!canvas) {
+    canvas = document.createElement('canvas');
+    canvas.id = 'click-spark-canvas';
+    canvas.className = 'click-spark-canvas';
+    document.body.appendChild(canvas);
+  }
+  const ctx = canvas.getContext('2d');
+
+  // Ajusta o tamanho do canvas ao viewport
+  function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+  resizeCanvas();
+  window.addEventListener('resize', resizeCanvas);
+
+  // Guarda as faíscas ativas
+  let sparks = [];
+
+  // Função de easing (ease-out)
+  function ease(t) {
+    return t * (2 - t);
+  }
+
+  // Desenha as faíscas
+  function drawSparks(now) {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    sparks = sparks.filter(spark => {
+      const elapsed = now - spark.startTime;
+      if (elapsed > duration) return false;
+      const progress = elapsed / duration;
+      const eased = ease(progress);
+
+      const distance = eased * sparkRadius;
+      const lineLength = sparkSize * (1 - eased);
+
+      for (let i = 0; i < sparkCount; i++) {
+        const angle = (2 * Math.PI * i) / sparkCount;
+        const x1 = spark.x + distance * Math.cos(angle);
+        const y1 = spark.y + distance * Math.sin(angle);
+        const x2 = spark.x + (distance + lineLength) * Math.cos(angle);
+        const y2 = spark.y + (distance + lineLength) * Math.sin(angle);
+
+        ctx.strokeStyle = sparkColor;
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.moveTo(x1, y1);
+        ctx.lineTo(x2, y2);
+        ctx.stroke();
+      }
+      return true;
+    });
+    if (sparks.length > 0) {
+      requestAnimationFrame(drawSparks);
+    }
+  }
+// fechar menu hamburguer
+// Fecha o menu hambúrguer ao clicar em um item do menu (mobile)
+document.querySelectorAll('nav ul li a').forEach(link => {
+  link.addEventListener('click', () => {
+    if (window.innerWidth <= 800) {
+      document.querySelector('nav ul').classList.remove('active');
+      document.getElementById('menu-toggle').classList.remove('active');
+    }
+  });
+});
+
+  // Ao clicar, adiciona faíscas
+  document.addEventListener('click', function(e) {
+    // Evita faísca ao clicar no modal de fundo
+    if (e.target.classList && e.target.classList.contains('modal')) return;
+
+    sparks.push({
+      x: e.clientX,
+      y: e.clientY,
+      startTime: performance.now()
+    });
+    requestAnimationFrame(drawSparks);
+  });
+})();
+
+// --- PARTICLES BACKGROUND ---// Partículas animadas com parallax no mouse
+(function() {
+  const canvas = document.getElementById('particles-bg');
+  const ctx = canvas.getContext('2d');
+  let width = window.innerWidth;
+  let height = window.innerHeight;
+  let mouse = { x: width/2, y: height/2 };
+  let particles = [];
+
+  function resize() {
+    width = window.innerWidth;
+    height = window.innerHeight;
+    canvas.width = width;
+    canvas.height = height;
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  // Cria partículas
+  const PARTICLE_COUNT = 60;
+  for (let i = 0; i < PARTICLE_COUNT; i++) {
+    particles.push({
+      x: Math.random() * width,
+      y: Math.random() * height,
+      r: 1.5 + Math.random() * 2.5,
+      dx: -0.2 + Math.random() * 0.4,
+      dy: -0.2 + Math.random() * 0.4,
+      baseX: 0,
+      baseY: 0,
+      parallax: 0.08 + Math.random() * 0.12,
+      color: `rgba(${180+Math.floor(Math.random()*60)},${220+Math.floor(Math.random()*35)},255,0.3)`
+    });
+  }
+
+  // Atualiza posição base para parallax
+  function updateBase() {
+    for (let p of particles) {
+      p.baseX = (mouse.x - width/2) * p.parallax;
+      p.baseY = (mouse.y - height/2) * p.parallax;
+    }
+  }
+
+  window.addEventListener('mousemove', function(e) {
+    mouse.x = e.clientX;
+    mouse.y = e.clientY;
+    updateBase();
+  });
+
+  // Animação
+  function animate() {
+    ctx.clearRect(0, 0, width, height);
+    for (let p of particles) {
+      // Movimento suave
+      p.x += p.dx;
+      p.y += p.dy;
+
+      // Rebote nas bordas
+      if (p.x < 0 || p.x > width) p.dx *= -1;
+      if (p.y < 0 || p.y > height) p.dy *= -1;
+
+      // Parallax
+      const px = p.x + p.baseX;
+      const py = p.y + p.baseY;
+
+      // Desenha partícula
+      ctx.beginPath();
+      ctx.arc(px, py, p.r, 0, 2 * Math.PI);
+      ctx.fillStyle = p.color;
+      ctx.shadowColor = "#aeeaff";
+    
+      ctx.shadowBlur = 8;
+      ctx.fill();
+      ctx.shadowBlur = 0;
+    }
+    requestAnimationFrame(animate);
+  }
+  animate();
+})();
+
