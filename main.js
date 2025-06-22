@@ -7,7 +7,7 @@ const filmes = [
     duracao: 90,
     avaliacao: 8.5,
     generos: ['Ação', 'Aventura', 'Fantasia', 'Animação'],
-    poster: '/img/valente.png',
+    poster: '../nexus2.5/img/valente.png',
     descricao: 'A princesa Merida deve seguir os costumes do seu reino e tomar-se rainha ao lado do cavalheiro que conseguir a sua mão durante um torneio de arco e flecha. Porém, a jovem está determinada a trilhar seu próprio caminho e desafia a tradição ancestral.',
     trailer: 'https://www.youtube.com/watch?v=TEHWDA_6e3M',
     assistir: 'https://drive.google.com/file/d/1m-tdZhebyZGVdC-naSKkM8QhnnR19eF8/view?usp=drive_link',
@@ -23,7 +23,7 @@ const filmes = [
     duracao: 102,
     avaliacao: 7.9,
     generos: ['Comédia', 'Aventura', 'Animação'],
-    poster: '/img/Onward.png',
+    poster: '../nexus2.5/img/Onward.png',
     descricao: 'Em um mundo transformado, no qual as criaturas não dependiam mais da magia para viver, dois irmãos elfos recebem um cajado de bruxo de seu falecido pai...',
     trailer: 'https://youtu.be/gn5QmllRCn4?si=peEJNVggGgye4Gag',
     assistir: 'https://drive.google.com/file/d/1EWxu4EyGrvE3aUPu6NwJkWi0E-yce0GY/view?usp=drive_link',
@@ -38,7 +38,7 @@ const filmes = [
     duracao: 105,
     avaliacao: 9.1,
     generos: ['Drama', 'Ficção Científica', 'Ação', 'Aventura'],
-    poster: '/img/mamacos.png',
+    poster: '../nexus2.5/img/mamacos.png',
     descricao: 'Muitas sociedades de macacos cresceram desde quando César levou seu povo a um oásis...',
     trailer: 'https://www.youtube.com/watch?v=Kdr5oedn7q8',
     assistir: 'https://drive.google.com/file/d/1rgyXCD3gTjB6wJF3S1_qBmxJdIbX0O4N/view?usp=drive_link',
@@ -54,7 +54,7 @@ const filmes = [
     duracao: 110,
     avaliacao: 8.2,
     generos: ['Drama', 'Suspense'],
-    poster: '/img/a-baleia.png',
+    poster: '../nexus2.5/img/a-baleia.png',
     descricao: 'Homem obeso e solitário busca se reconectar com filha adolescente em uma última chance de redenção.',
     trailer: 'https://www.youtube.com/watch?v=vqi1OuxQtJ8',
     assistir: 'https://drive.google.com/file/d/1L6WiqluCIaF1z8wNNST77yaovrcMQwlB/view?usp=drive_link',
@@ -485,7 +485,10 @@ document.querySelectorAll('nav ul li a').forEach(link => {
 
 (function() {
   const canvas = document.getElementById('particles-bg');
+  if (!canvas) return; // Protege contra erro se o canvas não existir
   const ctx = canvas.getContext('2d');
+
+
   let width = window.innerWidth;
   let height = window.innerHeight;
   let mouse = { x: width/2, y: height/2 };
