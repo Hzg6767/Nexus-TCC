@@ -25,6 +25,7 @@ nav ul {
   padding: 0;
   margin: 0;
   display: flex;
+  gap: 30px;
 }
 
 nav ul li a {
@@ -38,7 +39,7 @@ nav ul li a {
 nav ul li a:hover,
 nav ul li a.active {
   background-color: #e50914;
-  border-radius: 8px;
+  border-radius: 8px; 
   transition: all 0,5 s;
 }
 
@@ -187,8 +188,8 @@ main {
   background-color: #121218;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(255, 150, 150, 0.2);
-  box-shadow: 0 8px 16px rgba(250, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(255, 157, 157, 0.938);
+  box-shadow: 0 8px 16px rgba(250, 0, 0, 0.596);
   position: relative;
   cursor: pointer;
   flex: 0 0 200px; /* Fixed width for slider items */
@@ -786,3 +787,86 @@ h2 {
     display: flex;
   }
 }
+
+/* animação modal */
+
+@keyframes modal-up {
+  from {
+    opacity: 0;
+    transform: translateY(60px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.modal-content {
+  /* ...seus estilos existentes... */
+  animation: modal-up 0.4s cubic-bezier(.4,1.6,.6,1) both;
+}
+/* animação de clique */
+
+.click-spark-canvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+
+/* Efeito de brilho no card de filme */
+
+.movie-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.movie-card::before {
+  content: "";
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  width: 210%;
+  height: 210%;
+  background: linear-gradient(120deg, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0.55) 50%, rgba(255,255,255,0.08) 100%);
+  transform: skew(25deg);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.1s;
+}
+
+.movie-card:hover::before {
+  opacity: 1;
+  animation: glare-move 0.8s linear;
+}
+
+@keyframes glare-move {
+  0% {
+    transform: skew(25deg) translateX(-80%) translateY(-20%);
+    opacity: 0.2;
+  }
+  60% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: skew(25deg) translateX(80%) translateY(20%);
+    opacity: 0;
+  }
+}
+
+/* Efeito de partículas de fundo */
+#particles-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: -2;
+  display: block;
+}
+
