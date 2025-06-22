@@ -483,9 +483,6 @@ document.querySelectorAll('nav ul li a').forEach(link => {
 
 // --- PARTICLES BACKGROUND ---// Partículas animadas com parallax no mouse
 
-const canvas = document.getElementById('particles-bg');
-if (!canvas) return; // Garante que o canvas existe
-
 (function() {
   const canvas = document.getElementById('particles-bg');
   const ctx = canvas.getContext('2d');
