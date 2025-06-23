@@ -977,3 +977,6 @@ h2 {
   background: linear-gradient(to left, #0000007c 80%, transparent 100%);
 }
 
+#profile-menu-avatar, #profile-menu-name {
+  display: none !important;
+}
