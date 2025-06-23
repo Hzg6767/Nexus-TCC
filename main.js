@@ -75,9 +75,9 @@ const filmes = [
     trailer: 'https://www.youtube.com/watch?v=spJoZReeIeQ',
     assistir: 'https://drive.google.com/file/d/1y7vDON9vkYSLaXsYCXsuQPzM4AgCGBZ-/view?usp=drive_link',
     comentarios: [
-      { autor: 'Emerson CostaXD', texto: 'Cena do Capitão pegando o Mjolnir foi insana, velho.' }, 
-      { autor: 'Geovana', texto: 'Eu nem sou fã de herói, mas esse foi brabo. Amei a cena da galera toda voltando.' },
-      { autor: 'Yvan', texto: 'Tecnologia do Homem de Ferro é muito massa. Que pena que morreu.' },
+      { autor: 'Emerson CostaXD', data: 'Há 5 dias', texto: 'Cena do Capitão pegando o Mjolnir foi insana, velho.' }, 
+      { autor: 'Geovana', data: 'Há 1 semana', texto: 'Eu nem sou fã de herói, mas esse foi brabo. Amei a cena da galera toda voltando.' },
+      { autor: 'Yvan', data: 'Há 4 dias',texto: 'Tecnologia do Homem de Ferro é muito massa. Que pena que morreu.' },
       
     ]
   },
@@ -93,10 +93,10 @@ const filmes = [
     trailer: 'https://www.youtube.com/watch?v=rX2hCa3ae9o',
     assistir: 'https://drive.google.com/file/d/1IWASrb6kLSiTO6hvlQX5E25aKMJqG0jQ/view?usp=drive_link',
    comentarios: [
-      { autor: 'Carol Heli', texto: 'Eu não consegui assistir tudo. Aquilo é perturbador.' },
-      { autor: 'Geovana', texto: 'Credo! Mas confesso que não consegui parar de ver o filme, amei.' },
-      { autor: 'Yhasmin Pricila', texto: 'Eu parei na primeira armadilha. Não consegui continuar.' },
-      { autor: 'José Alves', texto: 'Fez o que tinha que fazer. As pessoas têm que valorizar a vida. Simples.' }
+      { autor: 'Carol Heli',data: 'Há 3 dias', texto: 'Eu não consegui assistir tudo. Aquilo é perturbador.' },
+      { autor: 'Geovana',data: 'Há 1 dia', texto: 'Credo! Mas confesso que não consegui parar de ver o filme, amei.' },
+      { autor: 'Yhasmin Pricila',data: 'Há  2 semanas', texto: 'Eu parei na primeira armadilha. Não consegui continuar.' },
+      { autor: 'José Alves',data: 'Há 2 semanas', texto: 'Fez o que tinha que fazer. As pessoas têm que valorizar a vida. Simples.' }
     ]
   },
   {
@@ -111,9 +111,9 @@ const filmes = [
     trailer: 'https://www.youtube.com/watch?v=jaJuwKCmJbY',
     assistir: 'https://drive.google.com/file/d/1AranhaversoLink/view?usp=drive_link',
      comentarios: [
-      { autor: 'Emerson CostaXD', texto: 'Clássico raiz. O McClane é brabo demais. Hoje em dia só tem herói chorando.' },
-      { autor: 'Ayrton Pierri', texto: 'É um filme de ação massa, mas vamos ser sinceros: se fosse um preto no lugar, já tinha tomado tiro na primeira cena.' },
-      { autor: 'José Alves', texto: 'Esse é o tipo de homem de verdade. Bate, apanha e vence. Sem frescura.' }
+      { autor: 'Emerson CostaXD',data: 'Há 4 dias', texto: 'Clássico raiz. O McClane é brabo demais. Hoje em dia só tem herói chorando.' },
+      { autor: 'Ayrton Pierri',data: 'Há 6 dias', texto: 'É um filme de ação massa, mas vamos ser sinceros: se fosse um preto no lugar, já tinha tomado tiro na primeira cena.' },
+      { autor: 'José Alves',data: 'Há  3 semanas', texto: 'Esse é o tipo de homem de verdade. Bate, apanha e vence. Sem frescura.' }
     ]
   },
   {
@@ -128,9 +128,9 @@ const filmes = [
     trailer: 'https://www.youtube.com/watch?v=4bG17OYs-GA',
     assistir: 'https://drive.google.com/file/d/1RQeTcbdsfScLOb3l4xGsRmOgaITAZzJR/view?usp=drive_link',
     comentarios: [
-    { autor: 'Ayrton Pierri', texto: 'Eu achei muito poético. Kiki é tipo uma metáfora pra amadurecer, achar seu lugar no mundo... filme tranquilo, mas cheio de sentido.' },
-    { autor: 'Geovana', texto: 'Aff, coisa mais linda! Me deu vontade de morar naquela cidade e voar levando pão quentinho. É aquele filme que abraça a gente, sabe?' },
-    { autor: 'Yhasmin Pricila', texto: 'Esse é meu tipo de filme! Fofinho, com gatinho, menina se descobrindo… quase chorei. Quero assistir de novo com legenda e dublado.' },
+    { autor: 'Ayrton Pierri', data: 'Há 6 dias', texto: 'Eu achei muito poético. Kiki é tipo uma metáfora pra amadurecer, achar seu lugar no mundo... filme tranquilo, mas cheio de sentido.' },
+    { autor: 'Geovana', data: 'Há 5 dias',texto: 'Aff, coisa mais linda! Me deu vontade de morar naquela cidade e voar levando pão quentinho. É aquele filme que abraça a gente, sabe?' },
+    { autor: 'Yhasmin Pricila',data: 'Há 4 dias', texto: 'Esse é meu tipo de filme! Fofinho, com gatinho, menina se descobrindo… quase chorei. Quero assistir de novo com legenda e dublado.' },
     ]
   },
   {
@@ -145,9 +145,9 @@ const filmes = [
     trailer: 'https://www.youtube.com/watch?v=tD76OqlJRwQ',
     assistir: 'https://drive.google.com/file/d/1abkKtm9MvEloFyU89MoTbNxZ6C9I2xfk/view?usp=drive_link',
     comentarios: [
-      { autor: 'Geovana', texto: 'Eu já assisti umas 5 vezes. É mó vibe boa. E o final no campo de futebol? Fofo!' },
-      { autor: 'Yhasmin Pricila', texto: 'Meu coração não aguenta esse filme. O poema, gente… muito lindo.' },
-      { autor: 'Caducando', texto: 'Cantar na arquibancada da escola que nem um doido pra mina que eu gosto tá no ranking de top coisas malucas que eu faria, e tirei a ideia desse filme.' },
+      { autor: 'Geovana',data: 'Há 1 dia', texto: 'Eu já assisti umas 5 vezes. É mó vibe boa. E o final no campo de futebol? Fofo!' },
+      { autor: 'Yhasmin Pricila',data: 'Há 4 dias', texto: 'Meu coração não aguenta esse filme. O poema, gente… muito lindo.' },
+      { autor: 'Caducando',data: 'Há 2 anos', texto: 'Cantar na arquibancada da escola que nem um doido pra mina que eu gosto tá no ranking de top coisas malucas que eu faria, e tirei a ideia desse filme.' },
     ]
   },
   {
@@ -163,9 +163,9 @@ const filmes = [
     assistir: 'https://drive.google.com/file/d/14MBM8HZ286k5w41_h1bLItgn9LGHNg3U/view?usp=drive_link',
     comentarios: [
      
-      { autor: 'Ayrton Pierri', texto: 'Ela avisou. O cara que criou uma ilusão. Não foi culpa dela.' },
-      { autor: 'Yhasmin Pricila', texto: 'Eu chorei. A música, o clima... ele era tão fofo, não merecia.' },
-      { autor: 'José Alves', texto: 'Mulher confunde o cara, some, depois casa com outro. Fala sério. Sem valores.' }
+      { autor: 'Ayrton Pierri',data: 'Há 2 semanas', texto: 'Ela avisou. O cara que criou uma ilusão. Não foi culpa dela.' },
+      { autor: 'Yhasmin Pricila',data: 'Há 7 dias', texto: 'Eu chorei. A música, o clima... ele era tão fofo, não merecia.' },
+      { autor: 'José Alves', data: 'Há 5 dias',texto: 'Mulher confunde o cara, some, depois casa com outro. Fala sério. Sem valores.' }
     ]
   },
   {
@@ -180,8 +180,8 @@ const filmes = [
     trailer: 'https://www.youtube.com/watch?v=NKbO3dFqiP4',
     assistir: 'https://drive.google.com/file/d/1BQVawCkleFY0ynT4xnY7oaa0Lm1mB1Hw/view?usp=drive_link',
     comentarios: [
-      { autor: 'Emerson CostaXD', texto: 'Visual meio doido, mas as corridas foram insanas. Curti!' },
-      { autor: 'Yvan', texto: 'Mano, a tecnologia visual é doida. Fiquei vendo frame por frame.' },
+      { autor: 'Emerson CostaXD',data: 'Há 4 dias', texto: 'Visual meio doido, mas as corridas foram insanas. Curti!' },
+      { autor: 'Yvan',data: 'Há 6 dias', texto: 'Mano, a tecnologia visual é doida. Fiquei vendo frame por frame.' },
     ]
   },
   {
@@ -196,9 +196,9 @@ const filmes = [
     trailer: 'https://www.youtube.com/watch?v=OOVmS_Z3ZZs',
     assistir: 'https://drive.google.com/file/d/108Q2IybFe2dEw8Ox6CMj92161x0OQvqI/view?usp=drive_link',
     comentarios: [
-      { autor: 'Emerson CostaXD', texto: 'Mano, esse filme é engraçado demais. E dá aquela ideia: será que a gente saberia usar o poder de Deus?' },
-      { autor: 'Ayrton Pierri', texto: 'É um filme de comédia, mas tem uns questionamentos sobre fé que são profundos.' },
-      { autor: 'Carol Heli', texto: 'Eu amo esse filme! Mostra que só Deus é Deus. A gente não pode fazer tudo.' },
+      { autor: 'Emerson CostaXD', data: 'Há 4 dias',texto: 'Mano, esse filme é engraçado demais. E dá aquela ideia: será que a gente saberia usar o poder de Deus?' },
+      { autor: 'Ayrton Pierri',data: 'Há 3 semanas', texto: 'É um filme de comédia, mas tem uns questionamentos sobre fé que são profundos.' },
+      { autor: 'Carol Heli', data: 'Há 1 mês',texto: 'Eu amo esse filme! Mostra que só Deus é Deus. A gente não pode fazer tudo.' },
       
     ]
   },
