@@ -147,6 +147,7 @@ const filmes = [
     comentarios: [
       { autor: 'Geovana', texto: 'Eu já assisti umas 5 vezes. É mó vibe boa. E o final no campo de futebol? Fofo!' },
       { autor: 'Yhasmin Pricila', texto: 'Meu coração não aguenta esse filme. O poema, gente… muito lindo.' },
+      { autor: 'Caducando', texto: 'Cantar na arquibancada da escola que nem um doido pra mina que eu gosto tá no ranking de top coisas malucas que eu faria, e tirei a ideia desse filme.' },
     ]
   },
   {
