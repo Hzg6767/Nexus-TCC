@@ -7,7 +7,7 @@ const filmes = [
     duracao: 90,
     avaliacao: 8.5,
     generos: ['Ação', 'Aventura', 'Fantasia', 'Animação'],
-    poster: '/img/valente.png',
+    poster: 'img/valente.png',
     descricao: 'A princesa Merida deve seguir os costumes do seu reino e tomar-se rainha ao lado do cavalheiro que conseguir a sua mão durante um torneio de arco e flecha. Porém, a jovem está determinada a trilhar seu próprio caminho e desafia a tradição ancestral.',
     trailer: 'https://www.youtube.com/watch?v=TEHWDA_6e3M',
     assistir: 'https://drive.google.com/file/d/1m-tdZhebyZGVdC-naSKkM8QhnnR19eF8/view?usp=drive_link',
@@ -20,10 +20,10 @@ const filmes = [
     id: 2,
     titulo: 'Dois Irmãos',
     ano: 2020,
-    duracao: 102,
+    duracao: 102 ,
     avaliacao: 7.9,
     generos: ['Comédia', 'Aventura', 'Animação'],
-    poster: '/img/Onward.png',
+    poster: 'img/Onward.png',
     descricao: 'Em um mundo transformado, no qual as criaturas não dependiam mais da magia para viver, dois irmãos elfos recebem um cajado de bruxo de seu falecido pai...',
     trailer: 'https://youtu.be/gn5QmllRCn4?si=peEJNVggGgye4Gag',
     assistir: 'https://drive.google.com/file/d/1EWxu4EyGrvE3aUPu6NwJkWi0E-yce0GY/view?usp=drive_link',
@@ -35,10 +35,10 @@ const filmes = [
     id: 3,
     titulo: 'Planeta dos Macacos: O Reinado',
     ano: 2024,
-    duracao: 105,
+    duracao: 105 ,
     avaliacao: 9.1,
     generos: ['Drama', 'Ficção Científica', 'Ação', 'Aventura'],
-    poster: '/img/mamacos.png',
+    poster: 'img/mamacos.png',
     descricao: 'Muitas sociedades de macacos cresceram desde quando César levou seu povo a um oásis...',
     trailer: 'https://www.youtube.com/watch?v=Kdr5oedn7q8',
     assistir: 'https://drive.google.com/file/d/1rgyXCD3gTjB6wJF3S1_qBmxJdIbX0O4N/view?usp=drive_link',
@@ -51,26 +51,166 @@ const filmes = [
     id: 4,
     titulo: 'A Baleia',
     ano: 2021,
-    duracao: 110,
+    duracao: 110 ,
     avaliacao: 8.2,
     generos: ['Drama', 'Suspense'],
-    poster: '/img/a-baleia.png',
+    poster: 'img/a-baleia.png',
     descricao: 'Homem obeso e solitário busca se reconectar com filha adolescente em uma última chance de redenção.',
     trailer: 'https://www.youtube.com/watch?v=vqi1OuxQtJ8',
     assistir: 'https://drive.google.com/file/d/1L6WiqluCIaF1z8wNNST77yaovrcMQwlB/view?usp=drive_link',
     comentarios: [
       { autor: 'Yasmin Pricila', data: 'Há 4 dias', texto: 'Filme assustador! Não consegui dormir depois de assistir.' }
     ]
-  }
+  },
+  // NOVOS FILMES
+  {
+    id: 5,
+    titulo: 'Vingadores: Ultimato',
+    ano: 2019,
+    duracao: 181 ,
+    avaliacao: 8.4,
+    generos: ['Ação', 'Herói', 'Ficção Científica'],
+    poster: 'img/endgame.jpg',
+    descricao: 'Após Thanos eliminar metade das criaturas vivas, os Vingadores têm de lidar com a perda de amigos e entes queridos. Com Tony Stark vagando perdido no espaço sem água e comida, Steve Rogers e Natasha Romanov lideram a resistência contra o titã louco.',
+    trailer: 'https://www.youtube.com/watch?v=spJoZReeIeQ',
+    assistir: 'https://drive.google.com/file/d/1y7vDON9vkYSLaXsYCXsuQPzM4AgCGBZ-/view?usp=drive_link',
+    comentarios: [
+      { autor: 'Emerson CostaXD', texto: 'Cena do Capitão pegando o Mjolnir foi insana, velho.' }, 
+      { autor: 'Geovana', texto: 'Eu nem sou fã de herói, mas esse foi brabo. Amei a cena da galera toda voltando.' },
+      { autor: 'Yvan', texto: 'Tecnologia do Homem de Ferro é muito massa. Que pena que morreu.' },
+      
+    ]
+  },
+  {
+    id: 6,
+    titulo: 'Jogos Mortais',
+    ano: 2004,
+    duracao: 114 ,
+    avaliacao: 7.6,
+    generos: ['Terror', 'Suspense'],
+    poster: 'img/Saw.jpg',
+    descricao: 'Dois homens acordam acorrentados em um banheiro como prisioneiros de um assassino em série que leva suas vítimas a situações limítrofes em um jogo macabro. Para sobreviver, eles terão de desvendar juntos as peças desse quebra-cabeças doentio.',
+    trailer: 'https://www.youtube.com/watch?v=rX2hCa3ae9o',
+    assistir: 'https://drive.google.com/file/d/1IWASrb6kLSiTO6hvlQX5E25aKMJqG0jQ/view?usp=drive_link',
+   comentarios: [
+      { autor: 'Carol Heli', texto: 'Eu não consegui assistir tudo. Aquilo é perturbador.' },
+      { autor: 'Geovana', texto: 'Credo! Mas confesso que não consegui parar de ver o filme, amei.' },
+      { autor: 'Yhasmin Pricila', texto: 'Eu parei na primeira armadilha. Não consegui continuar.' },
+      { autor: 'José Alves', texto: 'Fez o que tinha que fazer. As pessoas têm que valorizar a vida. Simples.' }
+    ]
+  },
+  {
+    id: 7,
+    titulo: 'Duro de Matar',
+    ano: 1988,
+    duracao: 131,
+    avaliacao: 8.2,
+    generos: ['Adrenalina', 'Ação', 'Aventura'],
+    poster: 'img/durodematar.png',
+    descricao: 'O policial de Nova York John McClane está visitando sua família no Natal. Ele participa de uma confraternização de fim de ano na sede da empresa japonesa em que a esposa trabalha. A festa é interrompida por terroristas que invadem o edifício de luxo. McClane não demora a perceber que não há ninguém para salvá-los, a não ser ele próprio.',
+    trailer: 'https://www.youtube.com/watch?v=jaJuwKCmJbY',
+    assistir: 'https://drive.google.com/file/d/1AranhaversoLink/view?usp=drive_link',
+     comentarios: [
+      { autor: 'Emerson CostaXD', texto: 'Clássico raiz. O McClane é brabo demais. Hoje em dia só tem herói chorando.' },
+      { autor: 'Ayrton Pierri', texto: 'É um filme de ação massa, mas vamos ser sinceros: se fosse um preto no lugar, já tinha tomado tiro na primeira cena.' },
+      { autor: 'José Alves', texto: 'Esse é o tipo de homem de verdade. Bate, apanha e vence. Sem frescura.' }
+    ]
+  },
+  {
+    id: 8,
+    titulo: 'O serviço de entregas da kiki',
+    ano: 1989,
+    duracao: 100,
+    avaliacao: 8.1,
+    generos: ['Anime', 'Animação', 'Familia'],
+    poster: 'img/kiki.jpg',
+    descricao: 'Por ordem de sua mãe, Kiki parte para um aprendizado de um ano, acompanhada por seu gato preto. A um comando de sua vassoura mágica, ela vai parar na charmosa cidadezinha de Moreoastal. Infelizmente, os hotéis locais não aceitam bruxas e a polícia a flagra fazendo algumas travessuras..',
+    trailer: 'https://www.youtube.com/watch?v=4bG17OYs-GA',
+    assistir: 'https://drive.google.com/file/d/1RQeTcbdsfScLOb3l4xGsRmOgaITAZzJR/view?usp=drive_link',
+    comentarios: [
+    { autor: 'Ayrton Pierri', texto: 'Eu achei muito poético. Kiki é tipo uma metáfora pra amadurecer, achar seu lugar no mundo... filme tranquilo, mas cheio de sentido.' },
+    { autor: 'Geovana', texto: 'Aff, coisa mais linda! Me deu vontade de morar naquela cidade e voar levando pão quentinho. É aquele filme que abraça a gente, sabe?' },
+    { autor: 'Yhasmin Pricila', texto: 'Esse é meu tipo de filme! Fofinho, com gatinho, menina se descobrindo… quase chorei. Quero assistir de novo com legenda e dublado.' },
+    ]
+  },
+  {
+    id: 9,
+    titulo: '10 Coisas que Eu Odeio em Você',
+    ano: 1999,
+    duracao: 90,
+    avaliacao: 7.4,
+    generos: ['Drama', 'Comédia', 'Romance'],
+    poster: 'img/odeioemvc.jpg',
+    descricao: 'Bianca Stratford é bonita e popular, mas não pode namorar antes que sua irmã mais velha encontre um namorado primeiro. O problema é que nenhum garoto consegue chegar perto da irmã, Kat Stratford. Para resolver a situação, um rapaz interessado em Bianca suborna um amigo com passado misterioso para sair com Kat e, quem sabe, tentar conquistá-la.',
+    trailer: 'https://www.youtube.com/watch?v=tD76OqlJRwQ',
+    assistir: 'https://drive.google.com/file/d/1abkKtm9MvEloFyU89MoTbNxZ6C9I2xfk/view?usp=drive_link',
+    comentarios: [
+      { autor: 'Geovana', texto: 'Eu já assisti umas 5 vezes. É mó vibe boa. E o final no campo de futebol? Fofo!' },
+      { autor: 'Yhasmin Pricila', texto: 'Meu coração não aguenta esse filme. O poema, gente… muito lindo.' },
+    ]
+  },
+  {
+    id: 10,
+    titulo: '(500) Dias com Ela',
+    ano: 2009,
+    duracao: 90,
+    avaliacao: 7.6,
+    generos: ['Drama', 'Comédia', 'Romance'],
+    poster: 'img/diascomela.jpg',
+    descricao: 'Um romântico escritor se surpreende quando sua namorada Summer termina o namoro repentinamente. Com isso, ele relembra vários momentos dos 500 dias que passaram juntos para tentar descobrir onde seu caso de amor se perdeu e vai redescobrindo suas verdadeiras paixões.',
+    trailer: 'https://www.youtube.com/watch?v=PsD0NpFSADM',
+    assistir: 'https://drive.google.com/file/d/14MBM8HZ286k5w41_h1bLItgn9LGHNg3U/view?usp=drive_link',
+    comentarios: [
+     
+      { autor: 'Ayrton Pierri', texto: 'Ela avisou. O cara que criou uma ilusão. Não foi culpa dela.' },
+      { autor: 'Yhasmin Pricila', texto: 'Eu chorei. A música, o clima... ele era tão fofo, não merecia.' },
+      { autor: 'José Alves', texto: 'Mulher confunde o cara, some, depois casa com outro. Fala sério. Sem valores.' }
+    ]
+  },
+  {
+    id: 11,
+    titulo: 'Speed Racer: O Filme',
+    ano: 2008,
+    duracao: 135,
+    avaliacao: 6.1,
+    generos: ['Animação', 'Aventura', 'Comédia'],
+    poster: 'img/speed.jpg',
+    descricao: 'Nascido em um família de pilotos de carros, Speed Racer é uma estrelas das corridas. Ao negar uma oferta lucrativa do empresário da Royalton Indústrias, Speed o deixa furioso e acaba descobrindo a corrupção dos patrocinadores em corridas. Para salvar os negócios da família, Speed participa do mesmo rally que matou seu irmão para desafiar um magnata corrupto.',
+    trailer: 'https://www.youtube.com/watch?v=NKbO3dFqiP4',
+    assistir: 'https://drive.google.com/file/d/1BQVawCkleFY0ynT4xnY7oaa0Lm1mB1Hw/view?usp=drive_link',
+    comentarios: [
+      { autor: 'Emerson CostaXD', texto: 'Visual meio doido, mas as corridas foram insanas. Curti!' },
+      { autor: 'Yvan', texto: 'Mano, a tecnologia visual é doida. Fiquei vendo frame por frame.' },
+    ]
+  },
+  {
+    id: 12,
+    titulo: 'Todo Poderoso',
+    ano: 2003,
+    duracao: 101,
+    avaliacao: 6.8,
+    generos: [, 'Comédia', 'Fantasia'],
+    poster: 'img/todopoderoso.jpg',
+    descricao: 'Bruce Nolan é um jornalista que tem a vida perfeita. Quando as coisas começam a dar errado, ele questiona Deus e a forma como ele comanda a Terra. O Todo Poderoso dá ao rapaz todos seus poderes, mas Bruce percebe como é difícil ser onipresente.',
+    trailer: 'https://www.youtube.com/watch?v=OOVmS_Z3ZZs',
+    assistir: 'https://drive.google.com/file/d/108Q2IybFe2dEw8Ox6CMj92161x0OQvqI/view?usp=drive_link',
+    comentarios: [
+      { autor: 'Emerson CostaXD', texto: 'Mano, esse filme é engraçado demais. E dá aquela ideia: será que a gente saberia usar o poder de Deus?' },
+      { autor: 'Ayrton Pierri', texto: 'É um filme de comédia, mas tem uns questionamentos sobre fé que são profundos.' },
+      { autor: 'Carol Heli', texto: 'Eu amo esse filme! Mostra que só Deus é Deus. A gente não pode fazer tudo.' },
+      
+    ]
+  },
 ];
 
+// --- CATEGORIAS ---
 const categorias = {
-  acao: { nome: 'Ação', filmes: [1, 3, 2] },
-  comedia: { nome: 'Comédia', filmes: [2] },
-  drama: { nome: 'Drama', filmes: [4, 2] },
-  terror: { nome: 'Terror', filmes: [4] },
-  ficcao: { nome: 'Ficção Científica', filmes: [3] },
-  animacao: { nome: 'Animação', filmes: [1, 2] }
+  acao: { nome: 'Ação', filmes: [1, 3, 2, 5, 7, 11] },
+  comedia: { nome: 'Comédia', filmes: [2, 9, 10, 12] },
+  drama: { nome: 'Drama', filmes: [4, 2, 9, 10] },
+  terror: { nome: 'Terror', filmes: [4, 6] },
+  ficcao: { nome: 'Ficção Científica', filmes: [3, 5, 11] },
+  animacao: { nome: 'Animação', filmes: [1, 2, 8] }
 };
 
 const imagensCategorias = {
@@ -87,13 +227,20 @@ let minhaLista = [];
 let filmeAtual = null;
 
 // --- CRIAÇÃO DE CARDS DE FILME ---
-function criarCardFilme(filme) {
+function criarCardFilme(filme, numero = null) {
   const card = document.createElement('div');
   card.className = 'movie-card';
   card.tabIndex = 0;
   card.setAttribute('role', 'button');
   card.setAttribute('aria-label', filme.titulo);
+
+  let numeroHtml = '';
+  if (numero !== null) {
+    numeroHtml = `<span class="movie-rank-num">${numero}</span>`;
+  }
+
   card.innerHTML = `
+    ${numeroHtml}
     <div class="movie-poster">
       <img src="${filme.poster}" alt="${filme.titulo}">
     </div>
@@ -111,12 +258,36 @@ function criarCardFilme(filme) {
   return card;
 }
 
-// --- RENDERIZAÇÃO DOS SLIDERS PRINCIPAIS ---
-function renderizarFilmesNosSlidersPrincipais() {
-  document.querySelectorAll('#home .movie-slider').forEach(slider => {
-    slider.innerHTML = '';
-    filmes.forEach(filme => slider.appendChild(criarCardFilme(filme)));
+// --- RENDERIZAÇÃO DOS SLIDERS ---
+function renderizarSlider(sliderId, filmesParaMostrar, opcoes = {}) {
+  const slider = document.getElementById(sliderId);
+  if (!slider) return;
+  slider.innerHTML = '';
+  filmesParaMostrar.forEach((filme, idx) => {
+    let numero = null;
+    if (opcoes.numerar && idx < opcoes.numerar) {
+      numero = idx + 1;
+    }
+    slider.appendChild(criarCardFilme(filme, numero));
   });
+}
+
+// --- NOVA BARRA "Para você" ---
+function renderizarSliderParaVoce() {
+  // Exemplo: recomendações (pode ser aleatório ou por lógica, aqui os 6 primeiros)
+  renderizarSlider('slider-para-voce', filmes.slice(0, 6));
+}
+
+// --- DESTAQUES DA SEMANA (TOP 5) ---
+function renderizarSliderDestaquesSemana() {
+  // Exemplo: 5 primeiros filmes, numerados de 1 a 5
+  renderizarSlider('slider-destaques', filmes.slice(0, 5), { numerar: 5 });
+}
+
+// --- LANÇAMENTOS (TODOS OS 12, ORDEM DECRESCENTE) ---
+function renderizarSliderLancamentos() {
+  // Filmes do 12 ao 1
+  renderizarSlider('slider-lancamentos', [...filmes].sort((a, b) => b.id - a.id));
 }
 
 // --- CATEGORIAS ---
@@ -164,6 +335,7 @@ function mostrarFilmesPorCategoria(categoriaId) {
   });
 }
 
+// --- MODAL ---
 function abrirModal(filme) {
   filmeAtual = filme;
   const modal = document.getElementById('movie-modal');
@@ -175,17 +347,12 @@ function abrirModal(filme) {
   document.getElementById('modal-genre').textContent = filme.generos ? filme.generos.join(', ') : '';
   document.getElementById('modal-description').textContent = filme.descricao;
 
-  // Adicione estas duas linhas:
   document.getElementById('watch-button').onclick = () => window.open(filme.assistir, '_blank');
   document.getElementById('trailer-button').onclick = () => window.open(filme.trailer, '_blank');
-
   document.getElementById('add-to-list-button').onclick = () => adicionarALista(filme);
 
-
-  // Comentários
   atualizarComentariosModal(filme);
 
-  // Botão de comentar
   const commentBtn = document.getElementById('submit-comment-btn');
   const commentTextarea = document.getElementById('comment-textarea');
   commentBtn.onclick = () => {
@@ -204,11 +371,9 @@ function abrirModal(filme) {
     }
   };
 
-  // Botão de fechar
   const closeBtn = modal.querySelector('.close-modal');
   closeBtn.onclick = () => { modal.style.display = 'none'; };
 
-  // Fecha ao clicar fora ou ESC
   modal.style.display = 'block';
   window.onclick = function(e) {
     if (e.target === modal) modal.style.display = 'none';
@@ -232,7 +397,7 @@ function atualizarComentariosModal(filme) {
   ).join('');
 }
 
-
+// --- MINHA LISTA ---
 function atualizarMinhaLista() {
   const content = document.getElementById('my-list-movies');
   const emptyMsg = document.getElementById('empty-list-message');
@@ -245,6 +410,16 @@ function atualizarMinhaLista() {
     content.style.display = 'flex';
     content.innerHTML = '';
     minhaLista.forEach(filme => content.appendChild(criarCardFilme(filme)));
+  }
+}
+
+function adicionarALista(filme) {
+  if (!minhaLista.some(item => item.id === filme.id)) {
+    minhaLista.push(filme);
+    atualizarMinhaLista();
+    alert(`${filme.titulo} adicionado à sua lista!`);
+  } else {
+    alert(`${filme.titulo} já está na sua lista.`);
   }
 }
 
@@ -283,41 +458,7 @@ function realizarBusca(termo) {
   });
 }
 
-// --- INICIALIZAÇÃO PRINCIPAL ---
-document.addEventListener('DOMContentLoaded', () => {
-  // Abas
-  document.querySelectorAll('nav ul li a').forEach(link => {
-    link.onclick = function(e) {
-      e.preventDefault();
-      const tabId = this.getAttribute('data-tab');
-      document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
-      document.querySelectorAll('nav ul li a').forEach(l => l.classList.remove('active'));
-      document.getElementById(tabId).classList.add('active');
-      this.classList.add('active');
-      if (tabId === 'categories') {
-        inicializarCategorias();
-        document.getElementById('category-results').innerHTML = '';
-      }
-      if (tabId === 'my-list') atualizarMinhaLista();
-    };
-  });
-
-  renderizarFilmesNosSlidersPrincipais();
-  inicializarCategorias();
-  inicializarBusca();
-});
-
-function adicionarALista(filme) {
-  if (!minhaLista.some(item => item.id === filme.id)) {
-    minhaLista.push(filme);
-    atualizarMinhaLista();
-    alert(`${filme.titulo} adicionado à sua lista!`);
-  } else {
-    alert(`${filme.titulo} já está na sua lista.`);
-  }
-}
-
-
+// --- PLANOS ---
 function renderizarPlanos() {
   const planos = [
     {
@@ -367,7 +508,6 @@ function renderizarPlanos() {
   `).join('');
 }
 
-// Função para destacar o plano selecionado
 window.selecionarPlano = function(nomePlano) {
   document.querySelectorAll('.plan-card').forEach(card => {
     if (card.querySelector('h3').textContent === nomePlano) {
@@ -378,27 +518,114 @@ window.selecionarPlano = function(nomePlano) {
   });
 };
 
-// Chame ao carregar a aba de inscrição
-document.addEventListener('DOMContentLoaded', () => {
-  // ...código existente...
-  renderizarPlanos();
-});
+// --- SLIDER BOTÕES ---
+function inicializarSliders() {
+  document.querySelectorAll('.movie-slider-wrapper').forEach(wrapper => {
+    const slider = wrapper.querySelector('.movie-slider');
+    const btnLeft = wrapper.querySelector('.slider-btn-left');
+    const btnRight = wrapper.querySelector('.slider-btn-right');
+    const scrollAmount = 320;
 
+    btnLeft.onclick = () => {
+      slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    };
+    btnRight.onclick = () => {
+      slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    };
+  });
+}
+
+// --- MENU HAMBURGUER ---
 document.getElementById('menu-toggle').onclick = function() {
   const navList = document.querySelector('nav ul');
   navList.classList.toggle('active');
 };
+document.querySelectorAll('nav ul li a').forEach(link => {
+  link.addEventListener('click', () => {
+    if (window.innerWidth <= 800) {
+      document.querySelector('nav ul').classList.remove('active');
+      document.getElementById('menu-toggle').classList.remove('active');
+    }
+  });
+});
 
-// ClickSpark estilo faísca com canvas (JS puro)
+// --- PARTICLES BACKGROUND ---
 (function() {
-  // Configurações
-  const sparkColor = "#e50914";
-  const sparkSize = 18; // comprimento da faísca
-  const sparkRadius = 24; // distância do centro
-  const sparkCount = 10;
-  const duration = 400; // ms
+  const canvas = document.getElementById('particles-bg');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  let width = window.innerWidth;
+  let height = window.innerHeight;
+  let mouse = { x: width/2, y: height/2 };
+  let particles = [];
 
-  // Cria o canvas global
+  function resize() {
+    width = window.innerWidth;
+    height = window.innerHeight;
+    canvas.width = width;
+    canvas.height = height;
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  const PARTICLE_COUNT = 60;
+  for (let i = 0; i < PARTICLE_COUNT; i++) {
+    particles.push({
+      x: Math.random() * width,
+      y: Math.random() * height,
+      r: 1.5 + Math.random() * 2.5,
+      dx: -0.2 + Math.random() * 0.4,
+      dy: -0.2 + Math.random() * 0.4,
+      baseX: 0,
+      baseY: 0,
+      parallax: 0.08 + Math.random() * 0.12,
+      color: `rgba(${180+Math.floor(Math.random()*60)},${220+Math.floor(Math.random()*35)},255,0.3)`
+    });
+  }
+
+  function updateBase() {
+    for (let p of particles) {
+      p.baseX = (mouse.x - width/2) * p.parallax;
+      p.baseY = (mouse.y - height/2) * p.parallax;
+    }
+  }
+
+  window.addEventListener('mousemove', function(e) {
+    mouse.x = e.clientX;
+    mouse.y = e.clientY;
+    updateBase();
+  });
+
+  function animate() {
+    ctx.clearRect(0, 0, width, height);
+    for (let p of particles) {
+      p.x += p.dx;
+      p.y += p.dy;
+      if (p.x < 0 || p.x > width) p.dx *= -1;
+      if (p.y < 0 || p.y > height) p.dy *= -1;
+      const px = p.x + p.baseX;
+      const py = p.y + p.baseY;
+      ctx.beginPath();
+      ctx.arc(px, py, p.r, 0, 2 * Math.PI);
+      ctx.fillStyle = p.color;
+      ctx.shadowColor = "#aeeaff";
+      ctx.shadowBlur = 8;
+      ctx.fill();
+      ctx.shadowBlur = 0;
+    }
+    requestAnimationFrame(animate);
+  }
+  animate();
+})();
+
+// --- CLICKSPARK ---
+(function() {
+  const sparkColor = "#e50914";
+  const sparkSize = 18;
+  const sparkRadius = 24;
+  const sparkCount = 10;
+  const duration = 400;
+
   let canvas = document.getElementById('click-spark-canvas');
   if (!canvas) {
     canvas = document.createElement('canvas');
@@ -408,7 +635,6 @@ document.getElementById('menu-toggle').onclick = function() {
   }
   const ctx = canvas.getContext('2d');
 
-  // Ajusta o tamanho do canvas ao viewport
   function resizeCanvas() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
@@ -416,15 +642,9 @@ document.getElementById('menu-toggle').onclick = function() {
   resizeCanvas();
   window.addEventListener('resize', resizeCanvas);
 
-  // Guarda as faíscas ativas
   let sparks = [];
+  function ease(t) { return t * (2 - t); }
 
-  // Função de easing (ease-out)
-  function ease(t) {
-    return t * (2 - t);
-  }
-
-  // Desenha as faíscas
   function drawSparks(now) {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     sparks = sparks.filter(spark => {
@@ -456,22 +676,9 @@ document.getElementById('menu-toggle').onclick = function() {
       requestAnimationFrame(drawSparks);
     }
   }
-// fechar menu hamburguer
-// Fecha o menu hambúrguer ao clicar em um item do menu (mobile)
-document.querySelectorAll('nav ul li a').forEach(link => {
-  link.addEventListener('click', () => {
-    if (window.innerWidth <= 800) {
-      document.querySelector('nav ul').classList.remove('active');
-      document.getElementById('menu-toggle').classList.remove('active');
-    }
-  });
-});
 
-  // Ao clicar, adiciona faíscas
   document.addEventListener('click', function(e) {
-    // Evita faísca ao clicar no modal de fundo
     if (e.target.classList && e.target.classList.contains('modal')) return;
-
     sparks.push({
       x: e.clientX,
       y: e.clientY,
@@ -481,86 +688,116 @@ document.querySelectorAll('nav ul li a').forEach(link => {
   });
 })();
 
-// --- PARTICLES BACKGROUND ---// Partículas animadas com parallax no mouse
+// --- PERFIL NO MENU ---
+function carregarPerfilNoMenu() {
+  const data = JSON.parse(localStorage.getItem('nexus-profile') || '{}');
+  const avatar = document.getElementById('profile-menu-avatar');
+  const nome = document.getElementById('profile-menu-name');
+  if (data.pic) avatar.src = data.pic;
+  if (data.username) nome.textContent = '@' + data.username;
+  else nome.textContent = 'Perfil';
+}
+carregarPerfilNoMenu();
+window.addEventListener('storage', function(e) {
+  if (e.key === 'nexus-profile') carregarPerfilNoMenu();
+});
+document.getElementById('logout-btn').onclick = function() {
+  localStorage.removeItem('nexus-profile');
+  window.location.reload();
+};
 
-(function() {
-  const canvas = document.getElementById('particles-bg');
-  if (!canvas) return; // Protege contra erro se o canvas não existir
-  const ctx = canvas.getContext('2d');
-
-
-  let width = window.innerWidth;
-  let height = window.innerHeight;
-  let mouse = { x: width/2, y: height/2 };
-  let particles = [];
-
-  function resize() {
-    width = window.innerWidth;
-    height = window.innerHeight;
-    canvas.width = width;
-    canvas.height = height;
-  }
-  resize();
-  window.addEventListener('resize', resize);
-
-  // Cria partículas
-  const PARTICLE_COUNT = 60;
-  for (let i = 0; i < PARTICLE_COUNT; i++) {
-    particles.push({
-      x: Math.random() * width,
-      y: Math.random() * height,
-      r: 1.5 + Math.random() * 2.5,
-      dx: -0.2 + Math.random() * 0.4,
-      dy: -0.2 + Math.random() * 0.4,
-      baseX: 0,
-      baseY: 0,
-      parallax: 0.08 + Math.random() * 0.12,
-      color: `rgba(${180+Math.floor(Math.random()*60)},${220+Math.floor(Math.random()*35)},255,0.3)`
-    });
-  }
-
-  // Atualiza posição base para parallax
-  function updateBase() {
-    for (let p of particles) {
-      p.baseX = (mouse.x - width/2) * p.parallax;
-      p.baseY = (mouse.y - height/2) * p.parallax;
-    }
-  }
-
-  window.addEventListener('mousemove', function(e) {
-    mouse.x = e.clientX;
-    mouse.y = e.clientY;
-    updateBase();
+// --- INICIALIZAÇÃO PRINCIPAL ---
+document.addEventListener('DOMContentLoaded', () => {
+  // Abas
+  document.querySelectorAll('nav ul li a').forEach(link => {
+    link.onclick = function(e) {
+      e.preventDefault();
+      const tabId = this.getAttribute('data-tab');
+      document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+      document.querySelectorAll('nav ul li a').forEach(l => l.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+      this.classList.add('active');
+      if (tabId === 'categories') {
+        inicializarCategorias();
+        document.getElementById('category-results').innerHTML = '';
+      }
+      if (tabId === 'my-list') atualizarMinhaLista();
+    };
   });
 
-  // Animação
-  function animate() {
-    ctx.clearRect(0, 0, width, height);
-    for (let p of particles) {
-      // Movimento suave
-      p.x += p.dx;
-      p.y += p.dy;
+  // Sliders
+  renderizarSliderParaVoce();
+  renderizarSliderDestaquesSemana();
+  renderizarSliderLancamentos();
+  inicializarSliders();
 
-      // Rebote nas bordas
-      if (p.x < 0 || p.x > width) p.dx *= -1;
-      if (p.y < 0 || p.y > height) p.dy *= -1;
+  inicializarCategorias();
+  inicializarBusca();
+  renderizarPlanos();
+});
 
-      // Parallax
-      const px = p.x + p.baseX;
-      const py = p.y + p.baseY;
-
-      // Desenha partícula
-      ctx.beginPath();
-      ctx.arc(px, py, p.r, 0, 2 * Math.PI);
-      ctx.fillStyle = p.color;
-      ctx.shadowColor = "#aeeaff";
-    
-      ctx.shadowBlur = 8;
-      ctx.fill();
-      ctx.shadowBlur = 0;
-    }
-    requestAnimationFrame(animate);
+// Função para embaralhar e pegar 9 filmes aleatórios do feito para voce
+function getFilmesAleatorios(qtd) {
+  const copia = [...filmes];
+  for (let i = copia.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copia[i], copia[j]] = [copia[j], copia[i]];
   }
-  animate();
-})();
+  return copia.slice(0, qtd);
+}
+
+// Renderiza a linha "Escolhas para você"
+function renderizarSliderEscolhas() {
+  const filmesAleatorios = getFilmesAleatorios(9);
+  renderizarSlider('slider-escolhas', filmesAleatorios);
+}
+
+// Chame na inicialização:
+renderizarSliderEscolhas();
+
+// ...código existente...
+
+// --- SLIDER BOTÕES COM CARROSSEL INFINITO ---
+function inicializarSliders() {
+  document.querySelectorAll('.movie-slider-wrapper').forEach(wrapper => {
+    const slider = wrapper.querySelector('.movie-slider');
+    const btnLeft = wrapper.querySelector('.slider-btn-left');
+    const btnRight = wrapper.querySelector('.slider-btn-right');
+    const scrollAmount = 320;
+
+    // Carrossel infinito: clona os primeiros e últimos elementos
+    if (slider && !slider.dataset.carouselInitialized) {
+      const cards = Array.from(slider.children);
+      if (cards.length > 0) {
+        // Clona os primeiros 3 e últimos 3 cards (ajuste conforme visibilidade)
+        for (let i = 0; i < 3 && i < cards.length; i++) {
+          slider.appendChild(cards[i].cloneNode(true));
+          slider.insertBefore(cards[cards.length - 1 - i].cloneNode(true), slider.firstChild);
+        }
+        slider.dataset.carouselInitialized = "true";
+        // Ajusta scroll inicial para o primeiro "real"
+        slider.scrollLeft = scrollAmount * 3;
+      }
+    }
+
+    btnLeft.onclick = () => {
+      slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+      setTimeout(() => {
+        // Se chegou no início dos clones, volta para o final real
+        if (slider.scrollLeft <= scrollAmount * 1) {
+          slider.scrollLeft = slider.scrollWidth - scrollAmount * (slider.childElementCount - 6);
+        }
+      }, 350);
+    };
+    btnRight.onclick = () => {
+      slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+      setTimeout(() => {
+        // Se chegou no final dos clones, volta para o início real
+        if (slider.scrollLeft >= slider.scrollWidth - scrollAmount * 4) {
+          slider.scrollLeft = scrollAmount * 3;
+        }
+      }, 350);
+    };
+  });
+}
 
