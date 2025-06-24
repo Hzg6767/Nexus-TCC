@@ -487,7 +487,7 @@ function renderizarPlanos() {
       beneficios: [
         "Acesso a todo o catálogo",
         "4 telas simultâneas",
-        "Qualidade Ultra HD",
+        "Qualidade 4k",
         "Download de filmes e séries",
         "Acesso antecipado a lançamentos",
         "Conteúdo exclusivo"
