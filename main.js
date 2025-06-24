@@ -550,7 +550,7 @@ document.querySelectorAll('nav ul li a').forEach(link => {
   });
 });
 
-// --- PARTICLES BACKGROUND ---
+// --- PARTICLES BACKGROUND COM LINHAS ENTRE PARTICULAS ---
 (function() {
   const canvas = document.getElementById('particles-bg');
   if (!canvas) return;
@@ -569,7 +569,7 @@ document.querySelectorAll('nav ul li a').forEach(link => {
   resize();
   window.addEventListener('resize', resize);
 
-  const PARTICLE_COUNT = 60;
+  const PARTICLE_COUNT = 180;
   for (let i = 0; i < PARTICLE_COUNT; i++) {
     particles.push({
       x: Math.random() * width,
@@ -597,8 +597,39 @@ document.querySelectorAll('nav ul li a').forEach(link => {
     updateBase();
   });
 
+  function drawLines() {
+    const maxDist = 120;
+    for (let i = 0; i < particles.length; i++) {
+      const p1 = particles[i];
+      const x1 = p1.x + p1.baseX;
+      const y1 = p1.y + p1.baseY;
+      for (let j = i + 1; j < particles.length; j++) {
+        const p2 = particles[j];
+        const x2 = p2.x + p2.baseX;
+        const y2 = p2.y + p2.baseY;
+        const dx = x1 - x2;
+        const dy = y1 - y2;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < maxDist) {
+          ctx.save();
+          ctx.globalAlpha = 1 - dist / maxDist;
+          ctx.strokeStyle = "#aeeaff";
+          ctx.lineWidth = 1;
+          ctx.beginPath();
+          ctx.moveTo(x1, y1);
+          ctx.lineTo(x2, y2);
+          ctx.stroke();
+          ctx.restore();
+        }
+      }
+    }
+  }
+
   function animate() {
     ctx.clearRect(0, 0, width, height);
+    // Desenha linhas entre partículas próximas
+    drawLines();
+    // Desenha partículas
     for (let p of particles) {
       p.x += p.dx;
       p.y += p.dy;
@@ -618,6 +649,7 @@ document.querySelectorAll('nav ul li a').forEach(link => {
   }
   animate();
 })();
+
 
 // --- CLICKSPARK ---
 (function() {
