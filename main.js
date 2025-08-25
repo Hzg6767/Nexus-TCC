@@ -202,6 +202,139 @@ const filmes = [
       
     ]
   },
+
+{
+  id: 13,
+  titulo: 'Star Wars: Episódio I – A Ameaça Fantasma',
+  ano: 1999,
+  duracao: 136,
+  avaliacao: 6.5,
+  generos: ['Ação', 'Aventura', 'Ficção Científica'],
+  poster: 'img/star 01.jpg',
+  descricao: 'Um jovem Anakin Skywalker é descoberto por Qui-Gon Jinn e Obi-Wan Kenobi durante uma crise envolvendo a Federação do Comércio e o planeta Naboo.',
+  trailer: '',
+  assistir: 'https://t.co/mOeBNoJqIH',
+  comentarios: []
+},
+{
+  id: 14,
+  titulo: 'Star Wars: Episódio II – Ataque dos Clones',
+  ano: 2002,
+  duracao: 142,
+  avaliacao: 6.6,
+  generos: ['Ação', 'Aventura', 'Ficção Científica'],
+  poster: 'img/star 02.jpg',
+  descricao: 'Anakin Skywalker e Padmé Amidala se aproximam enquanto a galáxia caminha para a guerra. Obi-Wan investiga uma tentativa de assassinato.',
+  trailer: '',
+  assistir: 'https://t.co/yjN100VCiZ',
+  comentarios: []
+},
+{
+  id: 15,
+  titulo: 'Star Wars: Episódio III – A Vingança dos Sith',
+  ano: 2005,
+  duracao: 140,
+  avaliacao: 7.6,
+  generos: ['Ação', 'Aventura', 'Ficção Científica'],
+  poster: 'img/anakin.png',
+  descricao: 'Anakin Skywalker sucumbe ao lado sombrio e se torna Darth Vader, enquanto a República se transforma no Império Galáctico.',
+  trailer: '',
+  assistir: 'https://t.co/wljtNyWwQN',
+  comentarios: []
+},
+{
+  id: 16,
+  titulo: 'Han Solo: Uma História Star Wars',
+  ano: 2018,
+  duracao: 135,
+  avaliacao: 6.9,
+  generos: ['Ação', 'Aventura', 'Ficção Científica'],
+  poster: 'img/star solo.jpg',
+  descricao: 'A origem do contrabandista Han Solo e suas aventuras ao lado de Chewbacca e Lando Calrissian.',
+  trailer: '',
+  assistir: 'https://t.co/F4H6DkgObD',
+  comentarios: []
+},
+{
+  id: 17,
+  titulo: 'Star Wars: Episódio IV – Uma Nova Esperança',
+  ano: 1977,
+  duracao: 121,
+  avaliacao: 8.6,
+  generos: ['Ação', 'Aventura', 'Ficção Científica'],
+  poster: 'img/star 04.jpg',
+  descricao: 'Luke Skywalker se une a Han Solo, Obi-Wan Kenobi e a Princesa Leia para enfrentar o Império Galáctico.',
+  trailer: '',
+  assistir: 'https://t.co/ISPVBGXgA1',
+  comentarios: []
+},
+{
+  id: 18,
+  titulo: 'Star Wars: Episódio V – O Império Contra-Ataca',
+  ano: 1980,
+  duracao: 124,
+  avaliacao: 8.7,
+  generos: ['Ação', 'Aventura', 'Ficção Científica'],
+  poster: 'img/star 05.jpg',
+  descricao: 'O Império persegue os rebeldes enquanto Luke treina com Yoda e enfrenta Darth Vader.',
+  trailer: '',
+  assistir: 'https://t.co/wWXrpeDY4R',
+  comentarios: []
+},
+{
+  id: 19,
+  titulo: 'Star Wars: Episódio VI – O Retorno de Jedi',
+  ano: 1983,
+  duracao: 131,
+  avaliacao: 8.3,
+  generos: ['Ação', 'Aventura', 'Ficção Científica'],
+  poster: 'img/star 06.jpg',
+  descricao: 'Luke Skywalker enfrenta Darth Vader e o Imperador para salvar a galáxia.',
+  trailer: '',
+  assistir: 'https://t.co/KtGYt8i6Cr',
+  comentarios: []
+},
+{
+  id: 20,
+  titulo: 'Star Wars: Episódio VII – O Despertar da Força',
+  ano: 2015,
+  duracao: 138,
+  avaliacao: 7.8,
+  generos: ['Ação', 'Aventura', 'Ficção Científica'],
+  poster: 'img/star 07.jpg',
+  descricao: 'Uma nova geração de heróis surge para enfrentar a Primeira Ordem e encontrar Luke Skywalker.',
+  trailer: '',
+  assistir: 'https://t.co/QZnmI8pfZS',
+  comentarios: []
+},
+{
+  id: 21,
+  titulo: 'Star Wars: Episódio VIII – Os Últimos Jedi',
+  ano: 2017,
+  duracao: 152,
+  avaliacao: 7.0,
+  generos: ['Ação', 'Aventura', 'Ficção Científica'],
+  poster: 'img/star 08.jpg',
+  descricao: 'Rey busca treinamento com Luke enquanto a Resistência luta para sobreviver.',
+  trailer: '',
+  assistir: 'https://t.co/bFyPdIzyNQ',
+  comentarios: []
+},
+{
+  id: 22,
+  titulo: 'Star Wars: Episódio IX – A Ascensão Skywalker',
+  ano: 2019,
+  duracao: 142,
+  avaliacao: 6.5,
+  generos: ['Ação', 'Aventura', 'Ficção Científica'],
+  poster: 'img/star 09.jpg',
+  descricao: 'A batalha final entre a Resistência e a Primeira Ordem, encerrando a saga Skywalker.',
+  trailer: '',
+  assistir: 'https://t.co/62yGgfNLhX',
+  comentarios: []
+}
+
+  
 ];
 
 // --- CATEGORIAS ---
@@ -210,7 +343,7 @@ const categorias = {
   comedia: { nome: 'Comédia', filmes: [2, 9, 10, 12] },
   drama: { nome: 'Drama', filmes: [4, 2, 9, 10] },
   terror: { nome: 'Terror', filmes: [4, 6] },
-  ficcao: { nome: 'Ficção Científica', filmes: [3, 5, 11] },
+  ficcao: { nome: 'Ficção Científica', filmes: [3, 5, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22] },
   animacao: { nome: 'Animação', filmes: [1, 2, 8] }
 };
 
@@ -320,7 +453,7 @@ function mostrarFilmesPorCategoria(categoriaId) {
   }
   container.innerHTML = `
     <h2>Filmes de ${categoria.nome}</h2>
-    <div class="movie-slider">
+    <div class="movie-grid">
       ${categoria.filmes.map(id => {
         const filme = filmes.find(f => f.id === id);
         return filme ? criarCardFilme(filme).outerHTML : '';
@@ -833,4 +966,3 @@ function inicializarSliders() {
     };
   });
 }
-
