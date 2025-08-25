@@ -221,6 +221,14 @@ main {
 }
 
 
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+  width: 100%;
+} 
+
 .movie-card {
   position: relative;
   background-color: #121218;
@@ -993,4 +1001,17 @@ h2 {
   background: #18181d;
   color: #fff;
   padding: 10px;
+}
+
+/* Exibe os filmes em grid na página de categoria */
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+  width: 100%;
+}
+.movie-card {
+  /* ajuste se necessário para o grid */
+  margin: 0;
 }
