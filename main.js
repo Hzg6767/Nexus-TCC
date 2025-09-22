@@ -333,6 +333,19 @@ const filmes = [
   assistir: 'https://t.co/62yGgfNLhX',
   comentarios: []
 }
+{
+  id: 23,
+  titulo: 'Homen de Ferro',
+  ano: 2008,
+  duracao: 126,
+  avaliacao: 8,0,
+  generos: ['Ação', 'Aventura', 'Ficção Científica'],
+  poster: 'stark.jpg',
+  descricao: 'Um genio playboy filantropo, dona da maior empresa armamentista é sequestrado e ve que suas criações não são usadas da maneira que penssava, então dentro de uma caverna ele cria e se torna o Homen de Ferro.',
+  trailer: '',
+  assistir: 'https://drive.google.com/drive/folders/1eqYK5w24mrC77trcaZtC5zEbhoosnpMH',
+  comentarios: []
+}
 
   
 ];
@@ -343,7 +356,7 @@ const categorias = {
   comedia: { nome: 'Comédia', filmes: [2, 9, 10, 12] },
   drama: { nome: 'Drama', filmes: [4, 2, 9, 10] },
   terror: { nome: 'Terror', filmes: [4, 6] },
-  ficcao: { nome: 'Ficção Científica', filmes: [3, 5, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22] },
+  ficcao: { nome: 'Ficção Científica', filmes: [3, 5, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23] },
   animacao: { nome: 'Animação', filmes: [1, 2, 8] }
 };
 
