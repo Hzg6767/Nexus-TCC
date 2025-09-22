@@ -61,7 +61,7 @@ const filmes = [
     comentarios: [
       { autor: 'Yasmin Pricila', data: 'Há 4 dias', texto: 'Filme assustador! Não consegui dormir depois de assistir.' }
     ]
-  },*/
+  },
   // NOVOS FILMES
   {
     id: 5,
