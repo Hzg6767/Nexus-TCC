@@ -345,6 +345,19 @@ const filmes = [
   trailer: '',
   assistir: 'https://drive.google.com/drive/folders/1eqYK5w24mrC77trcaZtC5zEbhoosnpMH',
   comentarios: []
+},
+{
+  id: 23,
+  titulo: 'Formula 1',
+  ano: 2025,
+  duracao: 195,
+  avaliacao: 8.0,
+  generos: ['Ação', 'Aventura', 'Ficção Científica'],
+  poster: 'img/hayes.jpg',
+  descricao: 'O veterano Sonny Hayes (Brad Pitt), que abandonou o esporte após um acidente nos anos 90, é tirado da aposentadoria para se juntar à equipe fictícia APXGP, que está à beira da falência.',
+  trailer: ' https://www.youtube.com/watch?v=CT2_P2DZBR0',
+  assistir: 'https://drive.google.com/file/d/1N62398XRlwNVtgcceSRHBJIOYPNAuHw-/view?usp=sharing',
+  comentarios: []
 }
 
   
