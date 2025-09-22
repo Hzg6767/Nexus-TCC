@@ -26,7 +26,7 @@ const filmes = [
     poster: 'img/Onward.png',
     descricao: 'Em um mundo transformado, no qual as criaturas não dependiam mais da magia para viver, dois irmãos elfos recebem um cajado de bruxo de seu falecido pai...',
     trailer: 'https://youtu.be/gn5QmllRCn4?si=peEJNVggGgye4Gag',
-    assistir: 'https://drive.google.com/file/d/1EWxu4EyGrvE3aUPu6NwJkWi0E-yce0GY/view?usp=drive_link',
+    assistir: 'https://drive.google.com/file/d/1yKzuwRmRsGnX99-5wvYwi_B52-vgJxrr/view?usp=sharing',
     comentarios: [
       { autor: 'José Alves', data: 'Há 1 semana', texto: 'Muito legal.' }
     ]
@@ -57,7 +57,7 @@ const filmes = [
     poster: 'img/a-baleia.png',
     descricao: 'Homem obeso e solitário busca se reconectar com filha adolescente em uma última chance de redenção.',
     trailer: 'https://www.youtube.com/watch?v=vqi1OuxQtJ8',
-    assistir: 'https://drive.google.com/file/d/1L6WiqluCIaF1z8wNNST77yaovrcMQwlB/view?usp=drive_link',
+    assistir: 'https://drive.google.com/file/d/1FTl4Mcof_S1FSlFGhTj04pJBPRwQkyl7/view?usp=sharing',
     comentarios: [
       { autor: 'Yasmin Pricila', data: 'Há 4 dias', texto: 'Filme assustador! Não consegui dormir depois de assistir.' }
     ]
@@ -109,7 +109,7 @@ const filmes = [
     poster: 'img/durodematar.png',
     descricao: 'O policial de Nova York John McClane está visitando sua família no Natal. Ele participa de uma confraternização de fim de ano na sede da empresa japonesa em que a esposa trabalha. A festa é interrompida por terroristas que invadem o edifício de luxo. McClane não demora a perceber que não há ninguém para salvá-los, a não ser ele próprio.',
     trailer: 'https://www.youtube.com/watch?v=jaJuwKCmJbY',
-    assistir: 'https://drive.google.com/file/d/1AranhaversoLink/view?usp=drive_link',
+    assistir: 'https://drive.google.com/file/d/1pEZ6PuxoaFBRT6UZWJ5ZZGLuXKOI0JMS/view?usp=sharing',
      comentarios: [
       { autor: 'Emerson CostaXD',data: 'Há 4 dias', texto: 'Clássico raiz. O McClane é brabo demais. Hoje em dia só tem herói chorando.' },
       { autor: 'Ayrton Pierri',data: 'Há 6 dias', texto: 'É um filme de ação massa, mas vamos ser sinceros: se fosse um preto no lugar, já tinha tomado tiro na primeira cena.' },
