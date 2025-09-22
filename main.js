@@ -332,19 +332,6 @@ const filmes = [
   trailer: '',
   assistir: 'https://t.co/62yGgfNLhX',
   comentarios: []
-}
-{
-  id: 23,
-  titulo: 'Homen de Ferro',
-  ano: 2008,
-  duracao: 126,
-  avaliacao: 8,0,
-  generos: ['Ação', 'Aventura', 'Ficção Científica'],
-  poster: 'stark.jpg',
-  descricao: 'Um genio playboy filantropo, dona da maior empresa armamentista é sequestrado e ve que suas criações não são usadas da maneira que penssava, então dentro de uma caverna ele cria e se torna o Homen de Ferro.',
-  trailer: '',
-  assistir: 'https://drive.google.com/drive/folders/1eqYK5w24mrC77trcaZtC5zEbhoosnpMH',
-  comentarios: []
 },
 {
   id: 23,
@@ -359,17 +346,15 @@ const filmes = [
   assistir: 'https://drive.google.com/file/d/1N62398XRlwNVtgcceSRHBJIOYPNAuHw-/view?usp=sharing',
   comentarios: []
 }
-
-  
 ];
 
 // --- CATEGORIAS ---
 const categorias = {
-  acao: { nome: 'Ação', filmes: [1, 3, 2, 5, 7, 11] },
+  acao: { nome: 'Ação', filmes: [1, 3, 2, 5, 7, 11, 23,24] },
   comedia: { nome: 'Comédia', filmes: [2, 9, 10, 12] },
   drama: { nome: 'Drama', filmes: [4, 2, 9, 10] },
   terror: { nome: 'Terror', filmes: [4, 6] },
-  ficcao: { nome: 'Ficção Científica', filmes: [3, 5, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23] },
+  ficcao: { nome: 'Ficção Científica', filmes: [3, 5, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22,]},
   animacao: { nome: 'Animação', filmes: [1, 2, 8] }
 };
 
@@ -621,37 +606,15 @@ function realizarBusca(termo) {
 // --- PLANOS ---
 function renderizarPlanos() {
   const planos = [
-    {
-      nome: "Básico",
-      preco: "R$ 19,90/mês",
-      beneficios: [
-        "Acesso a todo o catálogo",
-        "1 tela simultânea",
-        "Qualidade HD"
-      ]
-    },
+  
     {
       nome: "Padrão",
-      preco: "R$ 29,90/mês",
+      preco: "o que seu coração mandar",
       beneficios: [
-        "Acesso a todo o catálogo",
-        "2 telas simultâneas",
-        "Qualidade FULLHD",
-        "Download de filmes e séries",
+        'Apoia-se chave pix:(11)99518-2121',
       ]
     },
-    {
-      nome: "Premium",
-      preco: "R$ 39,90/mês",
-      beneficios: [
-        "Acesso a todo o catálogo",
-        "4 telas simultâneas",
-        "Qualidade 4k",
-        "Download de filmes e séries",
-        "Acesso antecipado a lançamentos",
-        "Conteúdo exclusivo"
-      ]
-    }
+
   ];
 
   const container = document.querySelector('.plans-container');
