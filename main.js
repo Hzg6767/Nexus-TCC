@@ -1,6 +1,6 @@
 // --- FILMES E CATEGORIAS ---
 const filmes = [
- /* {
+  {
     id: 1,
     titulo: 'Valente',
     ano: 2012,
