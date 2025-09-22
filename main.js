@@ -10,7 +10,7 @@ const filmes = [
     poster: 'img/valente.png',
     descricao: 'A princesa Merida deve seguir os costumes do seu reino e tomar-se rainha ao lado do cavalheiro que conseguir a sua mão durante um torneio de arco e flecha. Porém, a jovem está determinada a trilhar seu próprio caminho e desafia a tradição ancestral.',
     trailer: 'https://www.youtube.com/watch?v=TEHWDA_6e3M',
-    assistir: 'https://drive.google.com/file/d/1m-tdZhebyZGVdC-naSKkM8QhnnR19eF8/view?usp=drive_link',
+    assistir: 'https://drive.google.com/file/d/1D_NQ1XRLYw9LIdVjEwa4cuEP6kifAcAS/view?usp=sharing',
     comentarios: [
       { autor: 'Emerson CostaXD', data: 'Há 2 dias', texto: 'Filme Top, me emocionou do inicio ao fim, agora penso em viver minha vida solta pelo vento com meus cabelos soltos.' },
       { autor: 'Yvan', data: 'Há 5 dias', texto: 'Daora D+.' }
@@ -41,7 +41,7 @@ const filmes = [
     poster: 'img/mamacos.png',
     descricao: 'Muitas sociedades de macacos cresceram desde quando César levou seu povo a um oásis...',
     trailer: 'https://www.youtube.com/watch?v=Kdr5oedn7q8',
-    assistir: 'https://drive.google.com/file/d/1rgyXCD3gTjB6wJF3S1_qBmxJdIbX0O4N/view?usp=drive_link',
+    assistir: 'https://drive.google.com/file/d/1L6SKDSdnp79k2uxPdbi0mY-7ywCazxn4/view?usp=sharing',
     comentarios: [
       { autor: 'Carol Heli', data: 'Há 2 horas', texto: 'Nossa vei muito bom sério, Tá ai uma franquia que não tem um filme ruim.' },
       { autor: 'Ayrton Pierri', data: 'Há 1 semana', texto: 'Fiquei muito impressionado com o filme, muito legal o jeito que trabalharam a imagem de César depois da morte...' }
