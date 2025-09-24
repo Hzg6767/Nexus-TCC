@@ -1015,3 +1015,26 @@ h2 {
   /* ajuste se necessário para o grid */
   margin: 0;
 }
+
+#payment-form input[type="text"],
+#payment-form input[type="email"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+#payment-form textarea {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  font-family: inherit;
+  font-size: 1em;
+  min-height: 80px;
+  resize: vertical;
+}
