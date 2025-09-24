@@ -10,7 +10,7 @@ const filmes = [
     poster: 'img/valente.png',
     descricao: 'A princesa Merida deve seguir os costumes do seu reino e tomar-se rainha ao lado do cavalheiro que conseguir a sua mão durante um torneio de arco e flecha. Porém, a jovem está determinada a trilhar seu próprio caminho e desafia a tradição ancestral.',
     trailer: 'https://www.youtube.com/watch?v=TEHWDA_6e3M',
-    assistir: 'https://drive.google.com/file/d/1D_NQ1XRLYw9LIdVjEwa4cuEP6kifAcAS/view?usp=sharing',
+    assistir: 'https://drive.google.com/file/d/1m-tdZhebyZGVdC-naSKkM8QhnnR19eF8/view?usp=drive_link',
     comentarios: [
       { autor: 'Emerson CostaXD', data: 'Há 2 dias', texto: 'Filme Top, me emocionou do inicio ao fim, agora penso em viver minha vida solta pelo vento com meus cabelos soltos.' },
       { autor: 'Yvan', data: 'Há 5 dias', texto: 'Daora D+.' }
@@ -26,7 +26,7 @@ const filmes = [
     poster: 'img/Onward.png',
     descricao: 'Em um mundo transformado, no qual as criaturas não dependiam mais da magia para viver, dois irmãos elfos recebem um cajado de bruxo de seu falecido pai...',
     trailer: 'https://youtu.be/gn5QmllRCn4?si=peEJNVggGgye4Gag',
-    assistir: 'https://drive.google.com/file/d/1yKzuwRmRsGnX99-5wvYwi_B52-vgJxrr/view?usp=sharing',
+    assistir: 'https://drive.google.com/file/d/1EWxu4EyGrvE3aUPu6NwJkWi0E-yce0GY/view?usp=drive_link',
     comentarios: [
       { autor: 'José Alves', data: 'Há 1 semana', texto: 'Muito legal.' }
     ]
@@ -41,7 +41,7 @@ const filmes = [
     poster: 'img/mamacos.png',
     descricao: 'Muitas sociedades de macacos cresceram desde quando César levou seu povo a um oásis...',
     trailer: 'https://www.youtube.com/watch?v=Kdr5oedn7q8',
-    assistir: 'https://drive.google.com/file/d/1L6SKDSdnp79k2uxPdbi0mY-7ywCazxn4/view?usp=sharing',
+    assistir: 'https://drive.google.com/file/d/1rgyXCD3gTjB6wJF3S1_qBmxJdIbX0O4N/view?usp=drive_link',
     comentarios: [
       { autor: 'Carol Heli', data: 'Há 2 horas', texto: 'Nossa vei muito bom sério, Tá ai uma franquia que não tem um filme ruim.' },
       { autor: 'Ayrton Pierri', data: 'Há 1 semana', texto: 'Fiquei muito impressionado com o filme, muito legal o jeito que trabalharam a imagem de César depois da morte...' }
@@ -57,7 +57,7 @@ const filmes = [
     poster: 'img/a-baleia.png',
     descricao: 'Homem obeso e solitário busca se reconectar com filha adolescente em uma última chance de redenção.',
     trailer: 'https://www.youtube.com/watch?v=vqi1OuxQtJ8',
-    assistir: 'https://drive.google.com/file/d/1FTl4Mcof_S1FSlFGhTj04pJBPRwQkyl7/view?usp=sharing',
+    assistir: 'https://drive.google.com/file/d/1L6WiqluCIaF1z8wNNST77yaovrcMQwlB/view?usp=drive_link',
     comentarios: [
       { autor: 'Yasmin Pricila', data: 'Há 4 dias', texto: 'Filme assustador! Não consegui dormir depois de assistir.' }
     ]
@@ -109,7 +109,7 @@ const filmes = [
     poster: 'img/durodematar.png',
     descricao: 'O policial de Nova York John McClane está visitando sua família no Natal. Ele participa de uma confraternização de fim de ano na sede da empresa japonesa em que a esposa trabalha. A festa é interrompida por terroristas que invadem o edifício de luxo. McClane não demora a perceber que não há ninguém para salvá-los, a não ser ele próprio.',
     trailer: 'https://www.youtube.com/watch?v=jaJuwKCmJbY',
-    assistir: 'https://drive.google.com/file/d/1pEZ6PuxoaFBRT6UZWJ5ZZGLuXKOI0JMS/view?usp=sharing',
+    assistir: 'https://drive.google.com/file/d/1AranhaversoLink/view?usp=drive_link',
      comentarios: [
       { autor: 'Emerson CostaXD',data: 'Há 4 dias', texto: 'Clássico raiz. O McClane é brabo demais. Hoje em dia só tem herói chorando.' },
       { autor: 'Ayrton Pierri',data: 'Há 6 dias', texto: 'É um filme de ação massa, mas vamos ser sinceros: se fosse um preto no lugar, já tinha tomado tiro na primeira cena.' },
@@ -608,10 +608,10 @@ function renderizarPlanos() {
   const planos = [
   
     {
-      nome: "Padrão",
+      nome: "Doação Livre",
       preco: "o que seu coração mandar",
       beneficios: [
-        'Apoia-se chave pix:(11)99518-2121',
+        'chave pix:(11)99518-2121',
       ]
     },
 
@@ -954,4 +954,34 @@ function inicializarSliders() {
       }, 350);
     };
   });
+}
+
+// ...existing code...
+
+// Função para ativar a aba "Início"
+function ativarAbaInicio() {
+  // Remove classe 'active' de todas as abas
+  document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+  // Adiciona classe 'active' à aba de início
+  document.getElementById('home').classList.add('active');
+
+  // Atualiza o menu de navegação (opcional)
+  document.querySelectorAll('nav ul li a').forEach(link => link.classList.remove('active'));
+  const inicioLink = document.querySelector('nav ul li a[data-tab="home"]');
+  if (inicioLink) inicioLink.classList.add('active');
+}
+
+// Botão NEXUS (logo)
+const logoBtn = document.getElementById('logo-btn');
+if (logoBtn) {
+  logoBtn.addEventListener('click', ativarAbaInicio);
+  logoBtn.addEventListener('keypress', function(e) {
+    if (e.key === 'Enter' || e.key === ' ') ativarAbaInicio();
+  });
+}
+
+// Botão Explorar Catálogo
+const browseBtn = document.getElementById('browseCatalogBtn');
+if (browseBtn) {
+  browseBtn.addEventListener('click', ativarAbaInicio);
 }
