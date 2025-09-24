@@ -8,13 +8,13 @@
 </head>
 <body>
   <header>
-    <div class="logo" tabindex="0" aria-label="Logo NEXUS">NEXUS</div>
+        <div class="logo" id="logo-btn" tabindex="0" aria-label="Logo NEXUS">NEXUS</div>
     <nav aria-label="Navegação principal">
       <ul role="tablist">
-        <li><a href="#" role="tab" aria-selected="true" data-tab="home" class="active" tabindex="0">Início</a></li>
-        <li><a href="#" role="tab" aria-selected="false" data-tab="categories" tabindex="-1">Categorias</a></li>
-        <li><a href="#" role="tab" aria-selected="false" data-tab="subscription" tabindex="-1">Inscrição</a></li>
-        <li><a href="#" role="tab" aria-selected="false" data-tab="my-list" tabindex="-1">Minha Lista</a></li>
+        <li><a href="#" role="tab" aria-selected="true" data-tab="home" class="active" tabindex="0"><strong>Início</strong></a></li>
+        <li><a href="#" role="tab" aria-selected="false" data-tab="categories" tabindex="-1"></strong>Categorias</strong></a></li>
+        <li><a href="#" role="tab" aria-selected="false" data-tab="subscription" tabindex="-1"><strong>Apoia-se</strong></a></li>
+        <li><a href="#" role="tab" aria-selected="false" data-tab="my-list" tabindex="-1"><strong>Minha Lista</strong></a></li>
       </ul>
     </nav>
     <div class="search-container">
@@ -45,9 +45,9 @@
     <!-- Aba Início -->
     <section id="home" class="tab-content active" role="tabpanel" tabindex="0" aria-labelledby="tab-home">
       <div class="hero" role="banner" aria-label="Apresentação do NEXUS">
-        <h2>Bem-vindo ao NEXUS</h2>
-        <p>Assista aos melhores filmes e séries em um só lugar</p>
-        <button class="cta-button" id="subscribeCtaButton">Assinar Agora</button>
+        <h2><strong>Bem-vindo ao NEXUS</</h2>
+        
+       
       </div>
 
             <h2 class="section-title">Destaque da semana</h2>
@@ -92,18 +92,19 @@
     <!-- Aba Inscrição -->
     <section id="subscription" class="tab-content" role="tabpanel" tabindex="0" aria-labelledby="tab-subscription">
       <div class="subscription-container">
-        <h2>Escolha seu plano</h2>
+        
         <div class="plans-container" role="list"></div>
         <div class="payment-section">
           <h3>Informações de Pagamento</h3>
           <form id="payment-form" aria-label="Formulário de pagamento">
-            <label for="name">Nome Completo</label>
-            <input type="text" id="name" name="name" required placeholder="Digite seu nome completo" autocomplete="name" />
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" required placeholder="Digite seu e-mail" autocomplete="email" />
-            <div class="form-row">
-              <div>
-               
+                     <label for="name">Nome Completo</label>
+          <input type="text" id="name" name="name" required placeholder="Digite seu nome completo" autocomplete="name" />
+          
+                    <!-- Adicione após o textarea -->
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" required placeholder="Digite sua mensagem"></textarea>
+          <button type="submit" class="payment-button">Enviar Mensagem</button>
+
     </section>
 
     <!-- Aba Minha Lista -->
